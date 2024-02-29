@@ -13,5 +13,10 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void PlayButton_Click(object sender, EventArgs e)
+        {
+            nowPlaying.InnerHtml = $"Now Playing: {favSongArtist.Text}";
+        }
     }
 }

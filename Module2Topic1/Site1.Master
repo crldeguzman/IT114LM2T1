@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Module2Topic1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>My Website</title>
+    <style>
+       
+        .navbar {
+            background-color: rebeccapurple;
+            overflow: hidden;
+        }
+
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            justify-content: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <a href="Exercise1.aspx">Exercise 1</a>
+            <a href="Exercise2.aspx">Exercise 2</a>
+            <a href="Exercise3.aspx">Exercise 3</a>
+            <a href="Exercise4.aspx">Exercise 4</a>
+            <a href="Exercise5.aspx">Exercise 5</a>
+        </div>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer id="footer">
+            Copyright 2024 @Carl De Guzman
+        </footer>
+    </form>
+</body>
+</html>

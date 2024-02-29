@@ -13,5 +13,32 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void ticketType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void UploadBtn_Click(object sender, EventArgs e)
+        {
+            if (paymentUpload.HasFile)
+            {
+                if (paymentUpload.PostedFile.ContentType == "image/png")
+                {
+                    successMsg.Text = "File Upload Successful!";
+
+                }
+                else if (paymentUpload.PostedFile.ContentType == "image/jpg")
+                {
+                    successMsg.Text = "File Upload Successful!";
+
+                }
+                else
+                {
+                    successMsg.Text = "File Upload Unsuccessful.";
+
+                }
+            }
+        }
     }
 }
